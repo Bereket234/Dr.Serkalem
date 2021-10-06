@@ -1,6 +1,25 @@
 const content= document.querySelectorAll('.content');
 
 const maxNumOfChar= 100
+const sections =document.querySelectorAll('section')
+const nav = document.querySelector(".home-nav-container")
+window.addEventListener('scroll', () =>{
+    let current = '';
+    sections.forEach(section =>{
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if(scrollY > sectionTop && scrollY <(sectionTop + sectionHeight)){
+            if(section.classList.contains('nav-visible')){
+                console.log('heree');
+               nav.classList.add('activate');
+            }
+            else{
+               nav.classList.remove('activate');
+            }
+        }
+    })
+})
+
 
 console.log(content);
 

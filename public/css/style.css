@@ -169,6 +169,11 @@ a:focus {
   padding: 0;
 }
 
+.activate {
+  padding: 0;
+  background-color: var(--dark);
+}
+
 .custom_nav-container .navbar-nav {
   margin-left: auto;
 }
