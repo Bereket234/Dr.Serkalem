@@ -25,13 +25,13 @@ const transporter= nodemailer.createTransport({
     service: 'gmail',
     auth: {
         user: 'email',
-        pass: 'pass'
+        pass: 'email'
     }
 })
 
     const mailOption= {
         from:email ,
-        to: 'bereketnigussie9@gmaol.com',
+        to: 'email',
         subject: `message from ${name}: ${phone}` ,
         text:  message
     }

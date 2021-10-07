@@ -166,12 +166,12 @@ a:focus {
 }
 
 .custom_nav-container {
-  padding: 0;
+  padding:15px 150px;
 }
 
 .activate {
-  padding: 0;
-  background-color: var(--dark);
+  padding: 15px 100px;
+  background-color: var(--primary);
 }
 
 .custom_nav-container .navbar-nav {
@@ -533,6 +533,7 @@ a:focus {
 
 .doctor_section .box .img-box img {
   width: 100%;
+  height: 400px;
 }
 
 .doctor_section .box .detail-box {
@@ -540,6 +541,14 @@ a:focus {
   padding: 25px 15px;
   text-align: center;
   position: relative;
+}
+
+.doctor_section .box .detail-box .read-more{
+  cursor: pointer;
+  color : var(--primary);
+}
+.doctor_section .box .detail-box .read-more:hover {
+  color: var(--forth);
 }
 
 .doctor_section .box .detail-box .social_box {
